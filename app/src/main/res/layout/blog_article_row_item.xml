@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginEnd="15dp"
+              android:background="@color/white_forms"
+>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="303dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="6dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:src="@drawable/blog1"
+                android:layout_width="280dp"
+                android:layout_height="190dp"
+                android:id="@+id/imageUrl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+        />
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageUrl"
+                app:layout_constraintStart_toStartOf="@+id/imageUrl"
+                app:layout_constraintEnd_toEndOf="@+id/imageUrl"
+                app:layout_constraintBottom_toBottomOf="parent">
+            <TextView
+                    android:text="Pourquoi créer du contenu SEO ?"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/roboto_mono_medium"
+                    android:textStyle="bold"
+                    android:paddingStart="16dp"
+                    android:textSize="22sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titre"
+            />
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView
+                        android:text="avr 13, 2024"
+                        android:textStyle="bold"
+                        android:padding="6dp"
+                        android:textColor="@color/dark_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/date"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                <Button
+                        android:id="@+id/favbtn"
+                        app:backgroundTint="@null"
+                        android:background="@drawable/baseline_favorite_24"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <ImageView
+                    android:src="@drawable/line_orange_simple"
+                    android:layout_width="58dp"
+                    android:layout_height="7dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/imageView8"/>
+            <TextView
+                    android:id="@+id/contenu"
+                    android:layout_height="0dp"
+                    android:layout_width="0dp"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

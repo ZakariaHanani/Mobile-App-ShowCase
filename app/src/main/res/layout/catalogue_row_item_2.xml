@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/linearlayout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/gradiant_color_home"
+              android:layout_margin="10dp"
+              android:orientation="horizontal">
+    <ImageView
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/hebergement"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageUrl"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Hebergement web wordpress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_mono_medium"/>
+        <TextView
+                android:paddingTop="5dp"
+                android:text="à partir  8000.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/price"
+        />
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:id="@+id/favbtn"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/baseline_favorite_24"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:contentDescription="favourite"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            <TextView
+                    android:text="Hebergement"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/categorie"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:background="@drawable/background_catalogue_row" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/favbtn" app:layout_constraintHorizontal_bias="0.031"
+                    app:layout_constraintVertical_bias="0.687"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

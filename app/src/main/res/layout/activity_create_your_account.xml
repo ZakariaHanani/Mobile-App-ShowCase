@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="createYourAccountVM" type="com.valasapplication.app.modules.createyouraccount.data.viewmodel.CreateYourAccountVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearCreateYourAccount"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_900_01">
+        <LinearLayout android:id="@+id/linearColumncreateyou"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_61pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_39pxv"
+            android:paddingEnd="@dimen/_18pxh"
+            android:paddingStart="@dimen/_18pxh"
+            android:paddingTop="@dimen/_39pxv" style="@style/groupStylewhite_A700cornerRadius">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtCreateyour"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{createYourAccountVM.createYourAccountModel.txtCreateyour}"
+                style="@style/txtPoppinssemibold21" tools:text="@string/msg_create_your_account"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtCreateaccount"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{createYourAccountVM.createYourAccountModel.txtCreateaccount}"
+                style="@style/txtPoppinsregular13" tools:text="@string/msg_create_account_for"/>
+            <View android:id="@+id/viewView"
+                android:layout_height="@dimen/_118pxv" android:layout_width="@dimen/_268pxh"/>
+            <ImageView android:id="@+id/imageMobileloginOne"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_268pxh"
+                android:layout_width="@dimen/_268pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_mobile_login_pana}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_mobile_login_pana"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEmailorphone"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{createYourAccountVM.createYourAccountModel.txtEmailorphone}"
+                style="@style/txtPoppinsmedium13" tools:text="@string/msg_email_or_phone_number"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_gray_50_border_gray_50_radius_9"
+                android:drawablePadding="@dimen/_12pxh"
+                android:drawableStart="@drawable/drawable_img_lock"
+                android:ellipsize="end"
+                android:hint="@string/msg_enter_your_email"
+                android:id="@+id/etPhoneNumber"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_19pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@={createYourAccountVM.createYourAccountModel.etPhoneNumberValue}"
+                android:textColorHint="@color/blue_gray_400"
+                style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnContinue"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.02"
+                android:lineSpacingExtra="@dimen/_9pxh"
+                android:paddingBottom="@dimen/_14pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_14pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_continue"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_continue"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

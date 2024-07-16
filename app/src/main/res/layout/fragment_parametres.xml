@@ -1,0 +1,82 @@
+<!-- fragment_settings.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <!-- Language Section -->
+    <TextView
+            android:id="@+id/tvLanguageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+            android:id="@+id/radioGroupLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RadioButton
+                android:id="@+id/rbEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English" />
+
+        <RadioButton
+                android:id="@+id/rbSpanish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spanish" />
+
+        <RadioButton
+                android:id="@+id/rbFrench"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="French" />
+
+    </RadioGroup>
+
+    <!-- Theme Section -->
+    <TextView
+            android:id="@+id/tvThemeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theme"
+            android:textSize="24sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+            android:id="@+id/radioGroupTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RadioButton
+                android:id="@+id/rbLightTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light Theme" />
+
+        <RadioButton
+                android:id="@+id/rbDarkTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark Theme" />
+
+    </RadioGroup>
+
+    <!-- Save Button -->
+    <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Settings"
+            android:layout_marginTop="24dp" />
+
+</LinearLayout>

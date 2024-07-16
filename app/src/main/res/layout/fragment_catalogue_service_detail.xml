@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragments.CatalogueServiceDetailFragment">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <include layout="@layout/top_navbar"/>
+        <ImageView
+                android:src="@drawable/hebergement"
+                android:layout_width="match_parent"
+                android:layout_height="216dp" android:id="@+id/imageView3"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_orange_vala"
+                    android:text="Hébergement mutualisé"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.215"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout" app:layout_constraintVertical_bias="0.0"/>
+            <TextView
+                    android:text="18,74"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prix"
+                    android:textStyle="bold"
+                    android:textSize="26sp"
+                    app:layout_constraintStart_toStartOf="@+id/title"
+                    android:layout_marginStart="84dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="80dp"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" android:id="@+id/linearLayout"
+                    app:layout_constraintHorizontal_bias="0.545" app:layout_constraintVertical_bias="0.97"
+                    app:layout_constraintTop_toBottomOf="@+id/prix">
+                <TextView
+                        android:text="Êtes- vous prêt à franchir le pas?
+Bénéficiez d'un hébergement mutualisé conçus pour les sites web qui exigent plus de puissance et de capacité de RAM."
+                        android:padding="17dp"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/description"/>
+                <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="319dp"
+                        android:id="@+id/fonctionalits"
+                />
+            </LinearLayout>
+            <TextView
+                    android:text="À partir de"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" android:id="@+id/textView12"
+                    app:layout_constraintEnd_toStartOf="@+id/prix" app:layout_constraintBottom_toBottomOf="@+id/prix"
+                    app:layout_constraintTop_toTopOf="@+id/prix" android:layout_marginEnd="8dp"
+                    app:layout_constraintVertical_bias="1.0" app:layout_constraintStart_toStartOf="@+id/title"
+                    android:layout_marginStart="10dp"/>
+            <TextView
+                    android:text="Dh/mois"
+                    android:textStyle="bold"
+                    android:textSize="26sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView13"
+                    app:layout_constraintStart_toEndOf="@+id/prix" app:layout_constraintBottom_toBottomOf="@+id/prix"
+                    android:layout_marginStart="4dp" app:layout_constraintTop_toTopOf="@+id/prix"
+                    app:layout_constraintVertical_bias="0.0"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</FrameLayout>

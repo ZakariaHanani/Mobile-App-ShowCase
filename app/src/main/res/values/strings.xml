@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Vala Read</string>
+    <string name="loading">Chargement…</string>
+    <string name="no_internet_connection">Aucune connexion internet!</string>
+<string name="lbl_continue">Continuer</string>
+  <string name="msg_confirm_your_email">Confirmez Votre Email</string>
+  <string name="msg_we_ve_sent_5_digits">Nous avons envoyé un code de vérification à 5 chiffres
+à Hello@tyler.com</string>
+  <string name="msg_enter_your_email">Entrez votre email</string>
+  <string name="lbl_last_name">Nom</string>
+  <string name="msg_create_your_account">Créez votre compte</string>
+  <string name="msg_don_t_have_an_account">Pas encore de compte? Inscrivez-vous ici</string>
+  <string name="lbl_first_name">Prénom</string>
+  <string name="msg_explore_the_world">Explorez le monde d\'Hébergement Web et profitez des outils pratiques en une seule place!</string>
+  <string name="msg_enter_your_password">Entrez votre mot de passe</string>
+  <string name="msg_confirm_password">Confirmer le Mot de passe</string>
+  <string name="lbl_resend_in_3_03">Renvoyer dans 3:03</string>
+  <string name="lbl_sign_in">Connexion</string>
+  <string name="lbl_sign_up_here">Inscrivez-vous ici</string>
+  <string name="lbl_forgot_password">Mot de passe oublié?</string>
+  <string name="msg_we_ve_sent_5_digits2">Nous avons envoyé un code de vérification à 5 chiffres
+à </string>
+  <string name="msg_email_or_phone_number">Email</string>
+  <string name="lbl_welcome_back">Content de vous Revoir!</string>
+  <string name="lbl_hello_tyler_com">Hello@tyler.com</string>
+  <string name="msg_grow_your_insight">Développez votre vision avec une interface attrayante</string>
+  <string name="lbl_get_started">Commencer</string>
+  <string name="msg_keep_me_signed_in">Rester connecté</string>
+  <string name="lbl_password">Mot de passe</string>
+  <string name="msg_you_can_connect">Signer avec Google</string>
+  <string name="msg_create_account_for">Créer un compte pour explorer Vala Read</string>
+  <string name="msg_verify_and_create">Vérifier et Créer un Compte</string>
+  <string name="msg_let_s_login_for">Se connecter pour que l\'exploration continue</string>
+  <string name="msg_don_t_have_an_account2">Pas encore de compte? </string>
+  <string name="msg_need_help_faq">Besoin d\'aide | FAQ | Conditions d\'utilisation</string>
+  <string name="msg_enter_verification">Entrer le Code de Vérification</string>
+<string name="msg_please_enter_valid_pa">Veuillez entrer un mot de passe valide</string>
+<string name="msg_please_enter_valid_email">Veuillez entrer une adresse e-mail valide</string>
+<string name="msg_please_enter_valid_nu">Veuillez entrer un numéro valide</string>
+  <string name="Bnv">Bienvenue chez Vala Read</string>
+  <string name="Philosophie">Une culture de responsabilité , d\'engagement et de résultats !</string>
+  <string name="recherche_1">Explorez nos merveilles</string>
+  <string name="recherche_2">Découvrez ce que vous aimez</string>
+  <string name="recherche_3">Trouvez des idées géniales</string>
+  <string name="recherche_4">Trouvez le meilleur hébergement pour votre site</string>
+  <string name="recherche_5">Explorez nos offres d\'hébergement et de création de sites</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <!-- Preference Titles -->
+  <string name="messages_header">Messages</string>
+  <string name="sync_header">Sync</string>
+  <!-- Messages Preferences -->
+  <string name="signature_title">Your signature</string>
+  <string name="reply_title">Default reply action</string>
+  <!-- Sync Preferences -->
+  <string name="sync_title">Sync email periodically</string>
+  <string name="attachment_title">Download incoming attachments</string>
+  <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+  <string name="attachment_summary_off">Only download attachments when manually requested</string>
+  <string name="copyright">Copyright © 2021 Vala United Solutions Ltd. All Rights Reserved</string>
+  <string name="proprenous">Notre entreprise est en pleine expansion et ne fait appel qu
+    aux experts les plus compétents pour assurer aux
+    clients un service de qualité inégalée et une meilleure présence sur le web.
+  </string>
+
+  <string-array name="currencies_array">
+    <item>USD</item>
+    <item>EUR</item>
+    <item>MAD</item>
+  </string-array>
+  <string-array name="bases_array">
+    <item>2</item>
+    <item>8</item>
+    <item>10</item>
+    <item>16</item>
+  </string-array>
+  <string-array name="encryption_algorithms_array">
+    <item>AES</item>
+    <item>DES</item>
+  </string-array>
+
+  <string-array name="hash_algorithms_array">
+    <item>MD5</item>
+    <item>SHA-1</item>
+    <item>SHA-256</item>
+  </string-array>
+</resources>

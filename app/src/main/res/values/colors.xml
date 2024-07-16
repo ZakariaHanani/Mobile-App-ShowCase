@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+<color name="gray_600">#797979</color>
+  <color name="blue_gray_200">#abb3bb</color>
+  <color name="blue_gray_100">#d0d0d0</color>
+  <color name="blue_gray_400">#7f909f</color>
+  <color name="blue_gray_300">#969aa8</color>
+  <color name="gray_900">#121212</color>
+  <color name="gray_50">#f8f7fb</color>
+  <color name="light_blue_900">#066399</color>
+  <color name="gray_100">#f6f6f6</color>
+  <color name="white_A700_99">#99ffffff</color>
+  <color name="black_900_01">#000000</color>
+  <color name="black_900">#0d120e</color>
+  <color name="yellow_900">#ff7f23</color>
+  <color name="white_A700">#ffffff</color>
+<color name="ic_launcher_background">#FFFFFF</color>
+    <color name="white_forms">#F1F0F5</color>
+    <color name="blue">#0948b3</color>
+    <color name="bleu_logo">#FF006296</color>
+    <color name="dark_blue">#000D57</color>
+    <color name="orange_vala">#f67a3c</color>
+    <color name="dark_orange_vala">#F65E12</color>
+    <color name="grey_vala">#24374e</color>
+    <color name="blue_profile">#FF1C626E</color>
+</resources>

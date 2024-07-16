@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_marginTop="2dp" android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="0dp" android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp" android:layout_alignParentBottom="true" android:layout_marginBottom="0dp">
+        <TextView
+                android:layout_marginTop="20dp"
+                android:text="Mes informations"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:padding="9dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/bleu_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"/>
+        <TextView
+                android:text="Nom"
+                android:textSize="20dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:paddingStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="nom"
+                android:ems="20"
+                android:id="@+id/nom"/>
+
+        <TextView
+                android:text="Prenom"
+                android:textSize="20dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:paddingStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="prenom"
+                android:ems="20"
+                android:id="@+id/prenom"/>
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:text="Mes Moyens de contact"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:padding="9dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/bleu_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:text="Numéro de mobile"
+                android:textSize="20dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:id="@+id/telephone"
+                android:paddingStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="nom"
+                android:ems="20"/>
+        <TextView
+                android:text="Adresse mail"
+                android:textSize="20dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:paddingStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="youremail@example.example"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/email"/>
+        <Button
+                android:layout_marginTop="30dp"
+                android:text="Enregistrer les modifications"
+                android:textSize="19sp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:background="@color/bleu_logo"
+                app:backgroundTint="@null"
+                android:layout_height="wrap_content"
+                android:id="@+id/enregistrerbtn"/>
+    </LinearLayout>
+</RelativeLayout>

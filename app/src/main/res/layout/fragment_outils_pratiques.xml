@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+   <include layout="@layout/top_navbar"/>
+   <ScrollView android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical" >
+    <!-- Générateur de mot de passe -->
+   <LinearLayout android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical" >
+      <TextView
+            android:id="@+id/tv_password_generator_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Générateur de Mot de Passe"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+    <EditText
+            android:id="@+id/et_password_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Longueur du mot de passe"
+            android:inputType="number"
+            android:layout_marginBottom="8dp"/>
+
+    <Button
+            android:id="@+id/btn_generate_password"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Générer"/>
+
+    <TextView
+            android:id="@+id/tv_generated_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Mot de passe généré: "/>
+
+    <!-- Hashage -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hash Text"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+    <EditText
+            android:id="@+id/hset_plain_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter plain text"/>
+
+    <Spinner
+            android:id="@+id/spinner_hash_algorithm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+    <Button
+            android:id="@+id/btn_hash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background"
+            android:text="Hash"
+            android:layout_marginTop="16dp"/>
+
+    <TextView
+            android:id="@+id/tv_hashed_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+    <!-- Cryptage et Décryptage -->
+    <TextView
+            android:id="@+id/tv_encryption_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cryptage"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+    <EditText
+            android:id="@+id/et_plain_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Texte en clair"
+            android:layout_marginBottom="8dp"/>
+
+    <EditText
+            android:id="@+id/et_encryption_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clé de cryptage"
+            android:layout_marginBottom="8dp"/>
+
+    <Spinner
+            android:id="@+id/spinner_encryption_algorithm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+    <Button
+            android:id="@+id/btn_encrypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background"
+            android:text="Crypter"/>
+
+    <TextView
+            android:id="@+id/tv_encrypted_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Texte chiffré: "/>
+
+    <!-- Décryptage -->
+    <TextView
+            android:id="@+id/tv_decryption_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Décryptage"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+    <EditText
+            android:id="@+id/et_encrypted_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Texte chiffré"
+            android:layout_marginBottom="8dp"/>
+
+    <EditText
+            android:id="@+id/et_decryption_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clé de décryptage"
+            android:layout_marginBottom="8dp"/>
+
+    <Spinner
+            android:id="@+id/spinner_decryption_algorithm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+    <Button
+            android:id="@+id/btn_decrypt"
+            android:layout_width="match_parent"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background"
+            android:layout_height="wrap_content"
+            android:text="Décrypter"/>
+
+    <TextView
+            android:id="@+id/tv_decrypted_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="15dp"
+            android:text="Texte déchiffré: "/>
+ </LinearLayout>
+   </ScrollView>
+</LinearLayout>

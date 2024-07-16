@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/frame_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:windowSoftInputMode="adjustNothing"
+             android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ProgressBar
+                android:id="@+id/idPB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+        <include layout="@layout/top_navbar"
+                 app:layout_constraintTop_toTopOf="parent"
+                 android:id="@+id/include3"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintHorizontal_bias="0.0"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:padding="12dp"
+                      android:background="@drawable/gradiant_color_home"
+                      app:layout_constraintTop_toBottomOf="@+id/include3"
+                      android:id="@+id/linearLayout2"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent">
+            <TextView
+                    android:text="@string/recherche_4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView7"
+                    app:layout_constraintBottom_toBottomOf="@+id/include3"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                <androidx.appcompat.widget.SearchView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:padding="16dp"
+                        android:drawablePadding="12dp"
+                        android:iconifiedByDefault="true"
+                        android:queryHint="reacherche ..."
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:background="@drawable/search_background"
+                        android:id="@+id/searchview"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="vertical"
+                android:layout_width="408dp"
+                android:layout_height="551dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/constraintLayout4"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recyclerCatalogue"
+                    android:clipToPadding="false"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.838"
+                    app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
