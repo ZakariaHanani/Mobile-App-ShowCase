@@ -1,4 +1,5 @@
 
+
 # vala_read
 
 Built with AndroidX Support
@@ -74,3 +75,10 @@ We were unable to find following Fonts, Please add manually to ```app/src/main/r
 ```
 sfprodisplaymedium
 ```
+
+
+##Créateurs de l'application
+Cette application a été développée par :
+
+Zakaria Hanani
+Amine Aboukir
