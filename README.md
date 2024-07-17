@@ -77,7 +77,7 @@ sfprodisplaymedium
 ```
 
 
-##Créateurs de l'application
+### Créateurs de l'application
 Cette application a été développée par :
 
 Zakaria Hanani
